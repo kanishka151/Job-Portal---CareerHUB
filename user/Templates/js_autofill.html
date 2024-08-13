@@ -1,0 +1,47 @@
+
+
+<!DOCTYPE html>
+    <body>
+        <div>
+            <legend><b>Form : Web Develpoment Intern</b><br><br></legend>
+            <form>
+                <label for="firstname">First name: </label>
+                <input type="text" name="firstname" id="1" required>
+                <br>
+                <label for="lastname">Last name: </label>
+                <input type="text" name="lastname" id="2" required>
+                <br>
+                <label for="email">email: </label>
+                <input type="email" name="email" id="3" required>
+                <br>
+                <label for="password">password: </label>
+                <input type="password" name="password" id="4"  required>
+                <br>
+                <br>
+                <input type="checkbox"  name="autofill" id="5" onchange="autofiller()"/>
+                <label for="autofilling">Interested and autofill.</label>
+                <br>
+                <br>
+                <input type="submit" value="Login!">
+            </form>
+            <script>
+                function autofiller(){
+                if (document.getElementById("5").checked) {
+                document.getElementById("1").value ="Kanishka"
+                document.getElementById("2").value ="Kanishka"
+                document.getElementById("3").value ="Kanishka"
+                document.getElementById("4").value ="Kanishka"
+                } 
+                else {
+                document.getElementById("1").value =""
+                document.getElementById("2").value =""
+                document.getElementById("3").value =""
+                document.getElementById("4").value =""
+                }
+                }
+            </script>
+
+           
+        </div>
+    </body>
+</html>
